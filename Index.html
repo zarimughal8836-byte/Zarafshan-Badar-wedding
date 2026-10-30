@@ -1,0 +1,50 @@
+ `index.html` me:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zarafshan & Badar Wedding</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif}
+.wrap{width:100%;max-width:400px;padding:20px;text-align:center}
+.env{width:100%;height:260px;background:#;position:relative;cursor:pointer;box-shadow:0 25px 60px rgba(0,0,0,.25);transition:.8s}
+.env:before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#,#)}
+.flap{position:absolute;top:0;left:0;width:100%;height:55%;background:#;clip-path:polygon(0 0,100% 0,50% 100%);z-index:3}
+.pocket{position:absolute;bottom:0;width:100%;height:65%;background:#;clip-path:polygon(0 0,50% 55%,100% 0,100% 100%,0 100%);z-index:2}
+.seal{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:88px;height:88px;background:radial-gradient(circle at 30% 30%,#,# 60%,#);border-radius:50%;z-index:5;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.4);border:2px solid #}
+.seal b{font-family:'Great Vibes',cursive;color:#;font-size:24px}
+.tap{margin-top:35px;color:#999;font-size:11px;letter-spacing:4px}
+.card{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);width:90%;max-width:380px;background:#;border:1px solid #;padding:35px 25px;opacity:0;pointer-events:none;transition:.8s;box-shadow:0 40px 100px rgba(0,0,0,.2);text-align:center}
+.card.show{opacity:1;transform:translate(-50%,-50%) scale(1);pointer-events:all}
+h1{font-family:'Great Vibes',cursive;font-size:42px;color:#;line-height:1.1;margin:10px 0}
+.and{font-family:'Great Vibes',cursive;font-size:30px;color:#}
+.date{margin-top:15px;font-size:11px;letter-spacing:4px;color:#888}
+.line{width:40px;height:1px;background:#;margin:14px auto}
+.msg{font-size:13px;color:#666;line-height:1.8;font-weight:300;margin-top:15px}
+.btn{margin-top:22px;display:inline-block;padding:12px 30px;background:#;color:#fff;text-decoration:none;font-size:11px;letter-spacing:2px;border-radius:30px}
+.hide{transform:translateY(500px);opacity:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="env" id="env" onclick="openIt()"><div class="flap"></div><div class="pocket"></div><div class="seal"><b>Z & B</b></div></div>
+<div class="tap">TAP TO REVEAL</div>
+</div>
+<div class="card" id="card">
+<p style="font-size:9px;letter-spacing:4px;color:#">BISMILLAH - YOU'RE INVITED</p>
+<h1>Zarafshan<br>Rubab</h1>
+<div class="and">&</div>
+<h1>Badar Habib</h1>
+<div class="line"></div>
+<div class="date">24 JANUARY 2027</div>
+<p class="msg">Together with their families<br>request the pleasure of your company<br>as they begin their blessed journey</p>
+<a class="btn" href="https://wa.me/923000000000">CONFIRM ON WHATSAPP</a>
+<p style="margin-top:20px;font-size:9px;letter-spacing:2px;color:#bbb">WITH LOVE • Z & B</p>
+</div>
+<script>function openIt(){document.getElementById('env').classList.add('hide');setTimeout(()=>{document.getElementById('card').classList.add('show')},500)}</script>
+</body>
+</html
